@@ -1,0 +1,333 @@
+/* FAQ Section Layout */
+.faq-layout {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Content Area */
+.faq-content {
+    width: 100%;
+}
+
+.faq-section-title {
+    line-height: 1.2;
+    color: var(--black);
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--line-6);
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 32px 0 20px 0;
+    cursor: pointer;
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.faq-number {
+    line-height: 1.6;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.faq-text {
+    flex: 1;
+    margin-top: 2px;
+}
+
+.faq-toggle {
+    background: transparent;
+    border: 1px solid var(--line-6);
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--black);
+    font-size: 14px;
+    line-height: 1;
+    transition: all 0.3s ease;
+}
+
+.faq-toggle:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.faq-answer p {
+    color: var(--text);
+    padding: 0 0 32px 32px;
+    margin: 0;
+}
+
+/* Active state */
+.faq-item.active {
+    .faq-answer {
+        max-height: 200px;
+        opacity: 1;
+    }
+
+    .faq-toggle {
+        background-color: var(--black);
+        color: var(--white);
+    }
+}
+
+.open-sidebar-menu, .faq-sidebar-header {
+    display: none;
+}
+
+/* Right Sidebar */
+.faq-sidebar .faq-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: sticky;
+    top: 110px;
+    height: fit-content;
+}
+
+/* Search Section */
+.faq-search {
+    background: transparent;
+}
+
+.search-title {
+    margin-bottom: 16px;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px 16px;
+    padding-right: 50px;
+    border: 1px solid var(--line-6);
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--black);
+}
+
+.search-input::placeholder {
+    color: var(--text-2);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.search-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+    color: var(--text-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.search-btn:hover svg{
+    fill: var(--primary);
+}
+
+/* Categories Section */
+.categories-title {
+    margin-bottom: 16px;
+}
+
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.category-link {
+    display: block;
+    padding: 8px 0;
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+.category-link:hover,
+.category-link.active {
+    color: var(--primary);
+}
+
+/* Product Card */
+.faq-product-card {
+    background-color: var(--white);
+    /* border-radius: 0 0 12px 12px; */
+    height: 400px;
+    position: relative;
+}
+
+.faq-product-card .product-image {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.faq-product-card .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s ease-in-out;
+}
+
+.faq-product-card:hover .product-image img {
+    transform: scale(1.1);
+}
+
+.faq-product-card .product-content {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: end;
+}
+
+.faq-product-card .product-sale {
+    display: block;
+    color: var(--primary);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.faq-product-card .product-title {
+    color: var(--white);
+    /* line-height: .8; */
+}
+
+.faq-product-card .product-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    background: var(--white) !important;
+    color: var(--black);
+    border-radius: 50px;
+    gap: 8px;
+}
+
+.faq-product-card .product-btn:hover {
+    background-color: var(--black) !important;
+    color: var(--white);
+    gap: 10px;
+}
+
+.faq-product-card .product-btn svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* Mobile responsive */
+@media (max-width: 992px) {
+    .faq-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .open-sidebar-menu {
+        position: fixed;
+        right: 0;
+        top: 200px;
+        height: 40px;
+        width: 40px;
+        background-color: var(--black);
+        color: var(--white);
+        z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .faq-sidebar {
+       position: fixed;
+       inset: 0;
+       height: 100vh;
+       width: 100%;
+       background-color: rgba(0, 0, 0, 0.3);
+       display: flex;
+       justify-content: end;
+       z-index: 1000;
+       transform: translateX(110%);
+    }
+
+    .faq-sidebar.preview {
+        transform: translateX(0);
+    }
+
+    .faq-sidebar .faq-content {
+        width: 100%;
+        max-width: 400px;
+        background-color: var(--white);
+        margin-right: 0;
+        height: 100%;
+        padding: 20px;
+        overflow-y: scroll;
+        padding-top: 0;
+
+        /* > * {
+            flex-shrink: 0;
+        } */
+    }
+
+    .faq-sidebar-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        z-index: 10;
+        top: 0;
+        background-color: var(--white);
+        padding: 20px;
+        padding-top: 30px;
+    }
+}

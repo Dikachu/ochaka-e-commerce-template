@@ -1,0 +1,90 @@
+// FAQ Accordion Functionality
+document.addEventListener('DOMContentLoaded', function () {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const toggle = item.querySelector('.faq-toggle');
+        const icon = item.querySelector('.faq-icon');
+
+        question.addEventListener('click', function () {
+            const isActive = item.classList.contains('active');
+
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    const otherIcon = otherItem.querySelector('.faq-icon');
+                    otherIcon.textContent = '+';
+                }
+            });
+
+            // Toggle current item
+            if (isActive) {
+                item.classList.remove('active');
+                icon.textContent = '+';
+            } else {
+                item.classList.add('active');
+                icon.textContent = '−';
+            }
+        });
+    });
+
+    // Category link interactions
+    const links = document.querySelectorAll('.category-link');
+
+
+    // Function to handle smooth scrolling on link click
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+
+            links.forEach(link => link.classList.remove('active'))
+
+            link.classList.add('active')
+            
+
+            if (targetSection) {
+                window.scrollTo({
+                    top: targetSection.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Search functionality
+    const searchInput = document.querySelector('.search-input');
+    const searchBtn = document.querySelector('.search-btn');
+
+    searchBtn.addEventListener('click', function () {
+        const searchTerm = searchInput.value.trim();
+        if (searchTerm) {
+            console.log('Searching for:', searchTerm);
+            // Add search functionality here
+        }
+    });
+
+    searchInput.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter') {
+            searchBtn.click();
+        }
+    });
+});
+
+
+
+
+const openSidebarMenu = document.querySelector('.open-sidebar-menu');
+const faqSidebar = document.getElementById('faq-sidebar')
+
+handlePreviewToggle(openSidebarMenu, faqSidebar)
+
+
+
+
+
+
+
