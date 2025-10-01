@@ -106,7 +106,7 @@ body::-webkit-scrollbar-thumb {
     background-color: var(--primary);
 }
 
-body.modal-available {
+body.modal-available, body:has(#preloader) {
     overflow: hidden;
 }
 
