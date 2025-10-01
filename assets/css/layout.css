@@ -234,6 +234,7 @@
 }
 
 .action-btn {
+    display: inline-flex;
     position: relative;
     background: none;
     border: none;
@@ -298,11 +299,10 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 20px 32px;
+    padding: 20px;
     color: var(--white);
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 900;
+    cursor: pointer;
+    font-weight: 800;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
 }
