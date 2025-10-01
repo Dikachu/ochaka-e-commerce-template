@@ -154,12 +154,6 @@
 }
 
 .brand-story-images {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px; */
-
-
-
     display: flex;
     align-items: center;
     justify-content: flex-start;

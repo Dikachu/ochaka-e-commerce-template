@@ -19,8 +19,8 @@
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/layout.css">
-    <link rel="stylesheet" href="assets/css/faq.css">
+    <!-- <link rel="stylesheet" href="assets/css/layout.css"> -->
+    <link rel="stylesheet" href="assets/css/auth.css">
 </head>
 
 <body>
@@ -30,7 +30,7 @@
     </div>
 
     <!-- Header -->
-    <header class="header">
+    <header class="header" style="display: none;">
         <!-- Top Bar -->
         <div class="top-bar">
             <div class="container">
@@ -425,604 +425,130 @@
     </header>
 
     <main>
-        <!-- faq Hero -->
-        <section class="page-hero">
-            <h1>FAQ</h1>
-            <p>
-                <a href="index.html">Home</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
-                    class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8" />
-                </svg>
-                <a href="faq.html">FAQ</a>
-            </p>
-        </section>
-
-        <section class="faq-section">
+        <aside class="auth-form-container">
             <div class="container">
-                <div class="faq-layout">
-                    <!-- Left Side - FAQ Content -->
-                    <div class="faq-content">
-                        <h2 class="faq-section-title" id="account">My Account</h2>
+                <div class="auth-welcome auth-col">
+                    <img src="../assets/imgs/stores/store-3.jpg" alt="" loading="lazy">
+                    <div class="auth-img-overlay">
+                        <div>
+                            <h1>Join Us Today</h1>
 
-                        <div class="faq-list">
-                            <!-- FAQ Item 1 - Expanded by default -->
-                            <div class="faq-item active">
-                                <div class="faq-question">
-                                    <span class="faq-number">1.</span>
-                                    <span class="faq-text">What can I do if I forgot my password?</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">−</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Simply add your favorite items to the shopping cart, then proceed to checkout
-                                        where you fill in your shipping and payment details before confirming the
-                                        purchase.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 2 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">2.</span>
-                                    <span class="faq-text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                        elit.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 3 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">3.</span>
-                                    <span class="faq-text">Maecenas rhoncus neque eu neque maximus auctor congue sed
-                                        erat.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Maecenas rhoncus neque eu neque maximus auctor congue sed erat. Ut enim ad minim
-                                        veniam, quis nostrud exercitation.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 4 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">4.</span>
-                                    <span class="faq-text">Nam vel neque ut eros mollis bibendum vel ac nisl.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Nam vel neque ut eros mollis bibendum vel ac nisl. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum.</p>
-                                </div>
-                            </div>
-
-                            <!-- FAQ Item 5 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">5.</span>
-                                    <span class="faq-text">Duis porttitor eros at quam tincidunt tempus.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Duis porttitor eros at quam tincidunt tempus. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Orders & Purchases Section -->
-                        <h2 class="faq-section-title" id="orders">Orders & Purchases</h2>
-
-                        <div class="faq-list">
-                            <!-- Orders FAQ Item 1 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">1.</span>
-                                    <span class="faq-text">Donec tempor nisl commodo erat ullamcorper fringilla.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec tempor nisl commodo erat ullamcorper fringilla. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 2 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">2.</span>
-                                    <span class="faq-text">Suspendisse et sem in quam maximus imperdiet ac nec
-                                        nunc.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Suspendisse et sem in quam maximus imperdiet ac nec nunc. Ut enim ad minim
-                                        veniam, quis nostrud exercitation.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 3 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">3.</span>
-                                    <span class="faq-text">Cras fringilla ante sit amet ullamcorper placerat.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Cras fringilla ante sit amet ullamcorper placerat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 4 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">4.</span>
-                                    <span class="faq-text">Donec vestibulum leo nec erat congue laoreet.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec vestibulum leo nec erat congue laoreet. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 5 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">5.</span>
-                                    <span class="faq-text">Vestibulum ac elit et ligula tincidunt suscipit finibus vel
-                                        est.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Vestibulum ac elit et ligula tincidunt suscipit finibus vel est. Lorem ipsum
-                                        dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Returns & Refunds Section -->
-                        <h2 class="faq-section-title" id="refund">Returns & Refunds</h2>
-
-                        <div class="faq-list">
-                            <!-- Orders FAQ Item 1 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">1.</span>
-                                    <span class="faq-text">Donec tempor nisl commodo erat ullamcorper fringilla.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec tempor nisl commodo erat ullamcorper fringilla. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 2 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">2.</span>
-                                    <span class="faq-text">Suspendisse et sem in quam maximus imperdiet ac nec
-                                        nunc.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Suspendisse et sem in quam maximus imperdiet ac nec nunc. Ut enim ad minim
-                                        veniam, quis nostrud exercitation.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 3 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">3.</span>
-                                    <span class="faq-text">Cras fringilla ante sit amet ullamcorper placerat.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Cras fringilla ante sit amet ullamcorper placerat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 4 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">4.</span>
-                                    <span class="faq-text">Donec vestibulum leo nec erat congue laoreet.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec vestibulum leo nec erat congue laoreet. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 5 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">5.</span>
-                                    <span class="faq-text">Vestibulum ac elit et ligula tincidunt suscipit finibus vel
-                                        est.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Vestibulum ac elit et ligula tincidunt suscipit finibus vel est. Lorem ipsum
-                                        dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Shipping & Tracking Section -->
-                        <h2 class="faq-section-title" id="tracking">Shipping & Tracking</h2>
-
-                        <div class="faq-list">
-                            <!-- Orders FAQ Item 1 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">1.</span>
-                                    <span class="faq-text">Donec tempor nisl commodo erat ullamcorper fringilla.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec tempor nisl commodo erat ullamcorper fringilla. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 2 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">2.</span>
-                                    <span class="faq-text">Suspendisse et sem in quam maximus imperdiet ac nec
-                                        nunc.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Suspendisse et sem in quam maximus imperdiet ac nec nunc. Ut enim ad minim
-                                        veniam, quis nostrud exercitation.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 3 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">3.</span>
-                                    <span class="faq-text">Cras fringilla ante sit amet ullamcorper placerat.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Cras fringilla ante sit amet ullamcorper placerat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 4 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">4.</span>
-                                    <span class="faq-text">Donec vestibulum leo nec erat congue laoreet.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec vestibulum leo nec erat congue laoreet. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 5 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">5.</span>
-                                    <span class="faq-text">Vestibulum ac elit et ligula tincidunt suscipit finibus vel
-                                        est.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Vestibulum ac elit et ligula tincidunt suscipit finibus vel est. Lorem ipsum
-                                        dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Fees & billing Section -->
-                        <h2 class="faq-section-title" id="fees">Fees & billing</h2>
-
-                        <div class="faq-list">
-                            <!-- Orders FAQ Item 1 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">1.</span>
-                                    <span class="faq-text">Donec tempor nisl commodo erat ullamcorper fringilla.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec tempor nisl commodo erat ullamcorper fringilla. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 2 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">2.</span>
-                                    <span class="faq-text">Suspendisse et sem in quam maximus imperdiet ac nec
-                                        nunc.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Suspendisse et sem in quam maximus imperdiet ac nec nunc. Ut enim ad minim
-                                        veniam, quis nostrud exercitation.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 3 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">3.</span>
-                                    <span class="faq-text">Cras fringilla ante sit amet ullamcorper placerat.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Cras fringilla ante sit amet ullamcorper placerat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 4 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">4.</span>
-                                    <span class="faq-text">Donec vestibulum leo nec erat congue laoreet.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec vestibulum leo nec erat congue laoreet. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 5 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">5.</span>
-                                    <span class="faq-text">Vestibulum ac elit et ligula tincidunt suscipit finibus vel
-                                        est.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Vestibulum ac elit et ligula tincidunt suscipit finibus vel est. Lorem ipsum
-                                        dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Other Topics Section -->
-                        <h2 class="faq-section-title" id="other">Other Topics</h2>
-
-                        <div class="faq-list">
-                            <!-- Orders FAQ Item 1 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">1.</span>
-                                    <span class="faq-text">Donec tempor nisl commodo erat ullamcorper fringilla.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec tempor nisl commodo erat ullamcorper fringilla. Sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 2 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">2.</span>
-                                    <span class="faq-text">Suspendisse et sem in quam maximus imperdiet ac nec
-                                        nunc.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Suspendisse et sem in quam maximus imperdiet ac nec nunc. Ut enim ad minim
-                                        veniam, quis nostrud exercitation.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 3 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">3.</span>
-                                    <span class="faq-text">Cras fringilla ante sit amet ullamcorper placerat.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Cras fringilla ante sit amet ullamcorper placerat. Duis aute irure dolor in
-                                        reprehenderit in voluptate velit esse cillum.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 4 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">4.</span>
-                                    <span class="faq-text">Donec vestibulum leo nec erat congue laoreet.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Donec vestibulum leo nec erat congue laoreet. Excepteur sint occaecat cupidatat
-                                        non proident, sunt in culpa qui officia.</p>
-                                </div>
-                            </div>
-
-                            <!-- Orders FAQ Item 5 -->
-                            <div class="faq-item">
-                                <div class="faq-question">
-                                    <span class="faq-number">5.</span>
-                                    <span class="faq-text">Vestibulum ac elit et ligula tincidunt suscipit finibus vel
-                                        est.</span>
-                                    <button class="faq-toggle" aria-label="Toggle answer">
-                                        <span class="faq-icon">+</span>
-                                    </button>
-                                </div>
-                                <div class="faq-answer">
-                                    <p>Vestibulum ac elit et ligula tincidunt suscipit finibus vel est. Lorem ipsum
-                                        dolor sit amet, consectetur adipiscing elit.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="open-sidebar-menu">
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0z" />
-                                <path fill-rule="evenodd"
-                                    d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708z" />
-                            </svg>
-                        </span>
-                    </div>
-
-                    <!-- Right Sidebar -->
-                    <div class="faq-sidebar" id="faq-sidebar">
-                        <div class="faq-content">
-                            <!-- FAQ Header -->
-                            <div class="faq-sidebar-header">
-                                <h2>
-                                    Sidebar
-                                </h2>
-
-                                <div class="close-menu">
-                                    <span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
-                                            fill="currentColor" class="bi bi-x-lg close" viewBox="0 0 16 16">
-                                            <path
-                                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                                        </svg>
-                                    </span>
-                                </div>
-                            </div>
-
-                            <!-- Search Box -->
-                            <div class="faq-search">
-                                <h4 class="search-title">Frequently asked questions</h4>
-                                <div class="search-wrapper">
-                                    <input type="text" class="search-input"
-                                        placeholder="Enter your question or keyword">
-                                    <button class="search-btn" aria-label="Search">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
-                                            <path
-                                                d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <!-- Category List -->
-                            <div class="faq-categories">
-                                <h3 class="categories-title">Category</h3>
-                                <ul class="categories-list">
-                                    <li><a href="#account" class="category-link active">My account</a></li>
-                                    <li><a href="#orders" class="category-link">Orders & purchases</a></li>
-                                    <li><a href="#refund" class="category-link">Returns & Refunds</a></li>
-                                    <li><a href="#tracking" class="category-link">Shipping & Tracking</a></li>
-                                    <li><a href="#fees" class="category-link">Fees & billing</a></li>
-                                    <li><a href="#other" class="category-link">Other topic</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Product Card -->
-                            <div class="faq-product-card">
-                                <div class="product-image">
-                                    <img src="assets/images/products/product-1.jpeg" alt="Fall winter collection">
-                                </div>
-                                <div class="product-content">
-                                    <span class="product-sale">Sale up to 45%</span>
-                                    <h2 class="product-title">Fall winter collection</h2>
-                                    <button class="btn btn-primary product-btn">
-                                        Shop now
-                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                            stroke="currentColor" stroke-width="2">
-                                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
+                            <p>Fill in your details to create your account and stay connected with us.</p>
                         </div>
                     </div>
                 </div>
+
+                <form action="" class="auth-col auth-form">
+                    <h1>Register</h1>
+
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Enter your full name*" id="name"
+                                name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Enter your username*" id="username"
+                                required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Enter your email address*" id="emailInput"
+                            required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group password-input-con">
+                            <input type="password" class="form-input passwordInput" placeholder="Enter password*"
+                                id="password" required>
+                            <span class="togglePwd">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye-slash"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z" />
+                                    <path
+                                        d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829" />
+                                    <path
+                                        d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z" />
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="form-group password-input-con">
+                            <input type="password" class="form-input passwordInput password_confirmation"
+                                placeholder="Confirm password*" id="password_confirmation" name="password_confirmation"
+                                required>
+                            <span class="togglePwd">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-eye-slash"
+                                    viewBox="0 0 16 16">
+                                    <path
+                                        d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.79.588l.77.771A6 6 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755q-.247.248-.517.486z" />
+                                    <path
+                                        d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829" />
+                                    <path
+                                        d="M3.35 5.47q-.27.24-.518.487A13 13 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7 7 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12z" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="check-bottom">
+                        <div class="checkbox-wrap">
+                            <input id="agreement" type="checkbox" class="checkboxInput">
+                            <label for="agreement">I agree with <a href="">terms & conditions</a></label>
+                        </div>
+                        <div class="checkbox-wrap">
+                            <input id="keepSignedIn" type="checkbox" class="checkboxInput">
+                            <label for="keepSignedIn">Keep me signed in</label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="primary-btn auth-btn">
+                        Login
+                    </button>
+
+                    <p class="account-check">
+                        Already have an account?
+                        <a href="login.html">Login</a>
+                    </p>
+
+                    <div class="divider">
+                        <span>Or continue with social account</span>
+                    </div>
+
+                    <div class="auth-social-buttons">
+                        <button type="button" class="auth-social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48">
+                                <path fill="#FFC107"
+                                    d="M43.611,20.083H42V20H24v8h11.303c-1.649,4.657-6.08,8-11.303,8c-6.627,0-12-5.373-12-12c0-6.627,5.373-12,12-12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C12.955,4,4,12.955,4,24c0,11.045,8.955,20,20,20c11.045,0,20-8.955,20-20C44,22.659,43.862,21.35,43.611,20.083z" />
+                                <path fill="#FF3D00"
+                                    d="M6.306,14.691l6.571,4.819C14.655,15.108,18.961,12,24,12c3.059,0,5.842,1.154,7.961,3.039l5.657-5.657C34.046,6.053,29.268,4,24,4C16.318,4,9.656,8.337,6.306,14.691z" />
+                                <path fill="#4CAF50"
+                                    d="M24,44c5.166,0,9.86-1.977,13.409-5.192l-6.19-5.238C29.211,35.091,26.715,36,24,36c-5.202,0-9.619-3.317-11.283-7.946l-6.522,5.025C9.505,39.556,16.227,44,24,44z" />
+                                <path fill="#1976D2"
+                                    d="M43.611,20.083H42V20H24v8h11.303c-0.792,2.237-2.231,4.166-4.087,5.571c0.001-0.001,0.002-0.001,0.003-0.002l6.19,5.238C36.971,39.205,44,34,44,24C44,22.659,43.862,21.35,43.611,20.083z" />
+                            </svg>
+                            Sign up with Google
+                        </button>
+                        <button type="button" class="auth-social-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="#1877F2">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                            Sign up with facebook
+                        </button>
+                    </div>
+                </form>
             </div>
-        </section>
+        </aside>
     </main>
 
 
-    <footer class="site-footer">
+    <!-- Footer -->
+    <footer class="site-footer" style="display: none;">
         <div class="container">
             <!-- Main Footer Content -->
             <div class="footer-main">
@@ -1617,7 +1143,7 @@
     <!-- Scripts -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/layout.js"></script>
-    <script src="assets/js/faq.js"></script>
+    <script src="assets/js/auth.js"></script>
 </body>
 
 </html>

@@ -44,13 +44,22 @@ document.addEventListener('DOMContentLoaded', function () {
             links.forEach(link => link.classList.remove('active'))
 
             link.classList.add('active')
-            
+
+            hideAllPreview();
+
 
             if (targetSection) {
-                window.scrollTo({
-                    top: targetSection.offsetTop - 80,
-                    behavior: 'smooth'
-                });
+                if (window.innerWidth >= 992) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    window.scrollTo({
+                        top: targetSection.offsetTop + 150,
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });

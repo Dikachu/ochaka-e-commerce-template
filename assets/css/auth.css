@@ -3,15 +3,16 @@
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .auth-form-container .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 40px 10px;
+    padding: 40px 30px;
     /* box-shadow: 0 0 #0000, 0 0 #0000, 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); */
     gap: 40px;
+    
 }
 
 .auth-form-container {
@@ -19,7 +20,6 @@
         font-size: clamp(32px, 5.5vw, 56px);
         line-height: clamp(44px, 6.5vw, 67px);
         text-align: center;
-        color: var(--white);
     }
 
     /* .auth-form {
@@ -222,6 +222,10 @@
             align-items: center;
             text-align: center;
 
+            h1 {
+                color: var(--white);
+            }
+
             p {
                 font-size: 22px;
                 font-style: italic;
@@ -234,12 +238,17 @@
 @media (max-width: 1199px) {
     .auth-form-container .container {
         grid-template-columns: 1fr;
+        max-width: 700px;
+        margin: 0 auto;
     }
 
     .auth-form-container {
-        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../imgs/stores/store-3.jpg") center/cover;
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("../images/others/contact-information.jpg") center/cover;
         /* background-position: ; */
         color: var(--white);
+        h1 {
+            color: var(--white);
+        }
 
         .auth-welcome {
             display: none;
@@ -255,6 +264,7 @@
 @media (max-width: 600px) {
     .auth-form-container {
         height: auto;
+        min-height: 100vh;
 
         .form-row {
             grid-template-columns: 1fr;

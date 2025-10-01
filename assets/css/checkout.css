@@ -74,19 +74,6 @@
     position: relative;
 }
 
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;
-    padding: 16px 20px;
-    border: none;
-    background-color: var(--bg-2);
-    border-radius: 8px;
-    font-family: "Afacad", sans-serif;
-    font-size: 16px;
-    color: var(--black);
-}
-
 .form-group textarea {
     resize: vertical;
     min-height: 150px;

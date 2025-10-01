@@ -123,11 +123,11 @@ body.modal-available, body:has(#preloader) {
     }
 }
 
-@media (max-width: 1199px) {
+/* @media (max-width: 1199px) {
     body {
         padding-bottom: 5px;
     }
-}
+} */
 
 img {
     max-width: 100%;
@@ -256,10 +256,6 @@ button {
     display: inline-flex;
 }
 
-/* Since FF19 lowers the opacity of the placeholder by default */
-:-ms-input-placeholder {
-    color: var(--secondary-2);
-}
 
 /* Typography
 -------------------------------------------------------------- */
@@ -534,6 +530,20 @@ b {
     opacity: 0.6;
 }
 
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    background-color: var(--bg-2);
+    border-radius: 8px;
+    font-family: "Afacad", sans-serif;
+    font-size: 16px;
+    color: var(--black);
+}
+
 .page-hero {
     background-color: var(--bg-9);
     display: flex;
@@ -634,15 +644,8 @@ b {
 }
 
 .search-input-wrapper input {
-    width: 100%;
     padding: 16px 50px 16px 16px;
-    font-size: 16px;
-    line-height: 24px;
     border: 1px solid var(--line);
-    border-radius: 8px;
-    background-color: var(--bg-2);
-    color: var(--text);
-    font-family: "Afacad", sans-serif;
 }
 
 .search-input-wrapper input::placeholder {

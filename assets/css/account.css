@@ -126,12 +126,31 @@
 
 /* Stats Grid */
 .stats-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2%;
     margin-bottom: 48px;
     width: 100%;
     overflow: hidden;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    anchor-name: --carousel;
+    scroll-snap-type: x mandatory;
+    scroll-marker-group: after;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    &::scroll-marker-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 20px;
+    } 
 }
 
 .stat-card {
@@ -141,6 +160,48 @@
     border: 1px solid var(--line-6);
     display: flex;
     align-items: center;
+    width: 32%;
+    flex-shrink: 0;
+}
+
+.stat-card::scroll-marker {
+    content: '';
+    height: 10px;
+    width: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    display: none;
+}
+
+.stat-card::scroll-marker:target-current {
+    background-color: var(--primary);
+    transform: scale(1.3);
+}
+
+@media (max-width: 900px) {
+    .recent-orders {
+        margin-top: 30px;
+    }
+
+    .stat-card {
+        width: 49%;
+    }
+    .stat-card::scroll-marker {
+        display: flex;
+    }
+
+    .stat-card:nth-child(2)::scroll-marker {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .stat-card {
+        width: 100%;
+    }
+        .stat-card:nth-child(2)::scroll-marker {
+        display: block;
+    }
 }
 
 .stat-icon {
